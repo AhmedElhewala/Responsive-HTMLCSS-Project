@@ -489,7 +489,7 @@ main .container p.second-p {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 10px 7.5px #333;
+    box-shadow: 0 0 5px 2.5px #333;
 }
 .design .design-content .design-box:nth-of-type(2) i,
 .design .design-content .design-box:last-of-type i {
@@ -884,6 +884,7 @@ main .container p.second-p {
 .about .about-content .about-box {
     overflow: hidden;
     flex-basis: 25%;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -946,9 +947,6 @@ main .container p.second-p {
     }
 }
 @media (max-width: 767px) {
-    .about .about-content {
-        margin-top: 50px;
-    }
     .about .about-content .about-box {
         height: 200px;
     }
@@ -1245,7 +1243,7 @@ main .container p.second-p {
     position: relative;
     display: flex;
     align-content: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 60%;
 }
 .sign form input[type="email"] {
@@ -1260,7 +1258,7 @@ main .container p.second-p {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 20px;
+    left: 30px;
     color: #fff;
 }
 .sign form input[type="submit"] {
@@ -1272,6 +1270,10 @@ main .container p.second-p {
     cursor: pointer;
     box-shadow: 0 0 5px 2.5px #963f10;
     transition: var(--main-transition) !important;
+}
+.sign form input[type="submit"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 7.5px 2.5px #963f10;
 }
 .sign form input[type="email"]:focus,
 .sign form input[type="submit"]:focus {
@@ -1346,6 +1348,9 @@ main .container p.second-p {
 }
 .info .container .social-contact {
     margin: 30px auto 0;
+    -webkit-width: fit-content;
+    -moz-width: fit-content;
+    -o-width: fit-content;
     width: fit-content;
     display: flex;
     justify-content: space-between;
@@ -1397,6 +1402,9 @@ footer img {
 }
 footer .logo {
     position: relative;
+    -webkit-width: fit-content;
+    -moz-width: fit-content;
+    -o-width: fit-content;
     width: fit-content;
     margin: 0 auto 40px;
 }
